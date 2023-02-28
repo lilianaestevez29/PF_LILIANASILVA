@@ -1,0 +1,46 @@
+
+footer{
+    background-color: $colorAzul;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+        .letra-chica{
+            color: $letrasBlanca;
+            text-align: right;
+            font-size: 16px;
+            padding: 1rem;
+            
+        }
+
+
+        /* redes */
+
+        .redes{
+            min-width: 200px;
+            display: flex;
+            justify-content: space-around;
+
+        
+                a{
+                    background-color:$letrasBlanca;
+                    border-radius: 50%;
+                    color:$hoverRojo;
+                    font-size: 23px;
+                    line-height: 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: all .4s ease-in-out;
+                    width: 30px;
+                    height: 30px;
+                }
+                a:hover{
+                    background-color:$hoverRojo;
+                    color: $letrasBlanca;
+                    font-size: 30px;
+                
+        }
+    }
+}
