@@ -43,6 +43,7 @@ header ul{
     
 }
 header a{
+    
     color: #edf2f4;
     font-size: 16px;
     transition: all .4s ease-in-out;
@@ -380,30 +381,24 @@ legend, label, .pro, .tipo{
 /* ===================aplicando @media============================= */
 
 @media screen and (max-width: 576px){
-
    
-    /*  Header */
-    /* nav ul li img{
-        width: 3rem;
-        height: 3rem;
-        border-radius: 100%;
-    }
-        */
-    
-    header.container{
-        display: flex;
-        justify-content: space-between;
-        padding: 16px;
-    }
+        header.container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px;
+           
+            
+        }
         header nav{
-            width: 100vw;
-            display: inline;
+            /* display: inline; */
         }
         form{
             display: none;
         }
         #menu-check:not(:checked) ~ nav{
             display: none;
+            
         }
         #menu-check:checked ~ nav{
             display: block;
@@ -422,14 +417,18 @@ legend, label, .pro, .tipo{
             right: 0.5em;
             top: 1rem;
             z-index: 999;
+            margin-top: 10px;
+            margin-right: 45px;
             
         }
         #menu:hover{
+            margin-right: 45px;  /*ojo*/
             color:#04293A;
             background-color: #edf2f4;
         }
         #menu-cerrar{
             display: none;
+            
         }
         #menu-check:checked ~ label #menu-abrir{
             display: none;
@@ -439,10 +438,13 @@ legend, label, .pro, .tipo{
         }
 
         .container nav{
+            margin-right: 50px; 
             position: absolute;
             top: 0;
-            right: 0%;
-            height: 100%;
+            right: 0px;
+            left: 300px;
+            width: 275px;
+            height: 45%;
             background-color: #04293A;
             padding-top: 0.5em;
             padding-right: 1.5em;
@@ -453,9 +455,9 @@ legend, label, .pro, .tipo{
         }
 
         .container nav ul{
+            margin-right: 50px; 
             display: block;
-            margin-left: 350px;
-            font-size: 3em;
+            font-size: 2em;
 
         }
 
