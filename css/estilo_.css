@@ -150,6 +150,8 @@ nav ul{
 .video h4{
     color: #432C7A;
     font-weight: bold;
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 iframe{
     width: 60vw;
