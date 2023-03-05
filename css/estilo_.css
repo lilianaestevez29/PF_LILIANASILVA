@@ -309,7 +309,10 @@ legend, label, .pro, .tipo{
     border-radius: 20px;
     width: 20vw;
     height: 40vh; 
-    
+}
+.promo img:hover{
+    width: 25vw;
+    border: #432C7A solid 2px;
 }
 .promo h1{
     color: #432C7A;
@@ -384,17 +387,25 @@ legend, label, .pro, .tipo{
 
 @media screen and (max-width: 576px){
    
+        body{
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            line-height: 1.3;
+            width: auto;
+            height: auto;
+            padding: auto;
+        }
+    
+
         header.container{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 16px;
-           
+            
             
         }
-        header nav{
-            /* display: inline; */
-        }
+        
         form{
             display: none;
         }
@@ -496,7 +507,11 @@ legend, label, .pro, .tipo{
             height: 40vh;
         }
 
-        /* producto */
+        /* productos */
+        .producto h1{
+            margin: 0%;
+        }
+
         .texto{
             display: flex;
             flex-direction: column;
@@ -516,8 +531,9 @@ legend, label, .pro, .tipo{
 
         /* nosotros */
         .nosotros p{
-            margin: 20px;
+            padding-right: 30px;
             width: 80vw;
+            text-align: center;
         }
 
         
@@ -526,15 +542,20 @@ legend, label, .pro, .tipo{
 
         
         .promo{
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
         }
         .promo img{
-            width: 40vw;
+            width: 30vw;
             height: 20vh;
+            
+        }
+        .promo img:hover{
+            width: 35vw;
+            border: #432C7A solid 1px;
         }
         .promo p{
             line-height: 20px;
@@ -576,9 +597,15 @@ legend, label, .pro, .tipo{
             height: 20vh;
             width: 80vw;
         }
-        .escoge{
+        .escoger{
             display: flex;
-            flex-direction: row-reverse;   
+            flex-direction: column;
+            align-items:flex-start;
+            margin-left: 30%;
+            
+        }
+        .tipo{
+            margin-top: 20%;
         }
         input[type=checkbox], [type=radio]{
             margin: 7px;
