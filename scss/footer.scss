@@ -13,11 +13,26 @@ footer{
         .letra-chica{
             color: $letrasBlanca;
             text-align: right;
-            font-size: 16px;
+            font-size: 14px;
             padding: 1rem;
+            
             
         }
 
+        .gmail{
+            display: flex;
+            background-color: $letrasBlanca;
+            border-radius: 20px;
+            height: 25px;
+            align-items: center;
+            margin-bottom: 8px;
+            p{
+                color: $letraAzul;
+                padding-inline: 1em;
+                font-weight: bold;
+                margin-top: 1em;    
+            }
+        }
 
         /* redes */
 
@@ -47,3 +62,15 @@ footer{
         }
     }
 }
+            @media screen and (max-width: 576px){
+            footer{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                .gmail{
+                    margin-top: 20px;
+                }
+            }
+                
+            }
